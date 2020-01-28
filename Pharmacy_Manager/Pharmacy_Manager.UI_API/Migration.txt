@@ -1,0 +1,9 @@
+﻿Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\Pharmacy    ........it is done when enable migration for the first time
+
+add-migration -ConfigurationTypeName  UI.Migrations.Security.Configuration "InitialCreate"   ...........it is done when model is change
+
+update-database -ConfigurationTypeName  UI.Migrations.Security.Configuration   ..... it is done when update-database 
+
+
+######################################################################
+Enable-Migrations -ContextTypeName  ApplicationContext -MigrationsDirectory Migrations\Identity
